@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             public void onClick(View v) {
                 if (parent.getItemAtPosition(pos).equals("Meters")) {
                     Double num = Double.parseDouble(editText.getText().toString());
-                    result1.setText(String.format("%.3f", num * 100));
+                    result1.setText(String.format("%.2f", num * 100));
                     unit1.setText("Centimetres");
-                    result2.setText(String.format("%.3f", num * 3.281));
+                    result2.setText(String.format("%.2f", num * 3.281));
                     unit2.setText("Foot");
-                    result3.setText(String.format("%.3f", num * 39.37));
+                    result3.setText(String.format("%.2f", num * 39.37));
                     unit3.setText("Inches");
                 }
                 else {
@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             public void onClick(View v) {
                 if (parent.getItemAtPosition(pos).equals("Celsius")){
                     Double num = Double.parseDouble(editText.getText().toString());
-                    result1.setText(String.format("%.3f", (num*9/5)+32));
+                    result1.setText(String.format("%.2f", (num*9/5)+32));
                     unit1.setText("Fahrenheit");
-                    result2.setText(String.format("%.3f", num+273.15));
+                    result2.setText(String.format("%.2f", num+273.15));
                     unit2.setText("Kelvin");
                     result3.setText("");
                     unit3.setText("");
@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             public void onClick(View v) {
                 if (parent.getItemAtPosition(pos).equals("Kilograms")){
                     Double num = Double.parseDouble(editText.getText().toString());
-                    result1.setText(String.format("%.3f", num*1000));
+                    result1.setText(String.format("%.2f", num*1000));
                     unit1.setText("Gram");
-                    result2.setText(String.format("%.3f", num*35.275));
+                    result2.setText(String.format("%.2f", num*35.275));
                     unit2.setText("Ounce(Oz)");
-                    result3.setText(String.format("%.3f", num*2.205));
+                    result3.setText(String.format("%.2f", num*2.205));
                     unit3.setText("Pound(lb)");
                 }
                 else{
